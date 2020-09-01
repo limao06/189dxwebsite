@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>189电信官网 		<!-- 作者:李茂 20200901 --></title>
+		<link type="text/css" rel="stylesheet" href="../css/header.css" />
+		<script src="../js/header.js"></script>
+		<script src="../js/right.js"></script>
+		
+	</head>
+	<body onload="init()">
+		<!-- 头部header -->
+		<div class="header">
+			<!-- 头部通栏 -->
+			<div class="header_top">
+				<!-- 头部通栏左边 -->
+				<div class="header_top_left">
+					<div class="img1_top_left"></div>
+					<a href="#" class="a1_top_left">收藏欢go网</a>
+					<span class="sp1_top_left">欢迎来到欢go网</span>
+					<a href="#" class="a2_top_left">登录</a>
+				</div>
+				<!-- 头部通栏右边 -->
+				<div class="header_top_right">
+					<ul>
+						<li class="h" onmouseover="up_rightShow1()" onmouseout="closeShow1()">
+							<div class="h_div">
+								<div class="img1_top_right"></div>
+								<div class="img2_top_right"></div>
+								<a href="#" class="I189">我的189</a>
+							</div>
+							<ul id="u1_top_right">
+								<li class="xiala_a"><a href="#">我的套餐</a></li>
+								<li class="xiala_a"><a href="#">我的订单</a></li>
+								<li class="xiala_a"><a href="#">我的详单</a></li>
+								<li class="xiala_a"><a href="#">我的积分</a></li>
+							</ul>
+						</li>
+						<li><span>|</span></li>
+						<li class="h" onmouseover="up_rightShow2()" onmouseout="closeShow2()">
+							<div class="dv1_top_right">
+								<div class="img3_top_right"></div>
+								<a href="#" class="kehuduan">电信营业厅客户端</a>
+							</div>
+							<div class="dv2_top_right">
+								<ul id="u2_top_right">
+									<li><img src="../189images/app189.png"></li>
+								</ul>
+							</div>
+						</li>
+
+
+						<li><span>|</span></li>
+						<li class="h">
+							<div class="img4_top_right"></div>
+							<a href="#" class="email">189邮箱</a>
+						</li>
+
+						<li><span>|</span></li>
+
+						<li class="h" onmouseover="up_rightShow3()" onmouseout="closeShow3()">
+							<div>
+								<div class="img5_top_right"></div>
+								<a href="#" class="kehuduan">消费者帮助中心</a>
+							</div>
+							<ul id="u3_top_right">
+								<li class="xiala_abz">
+									<a href="#"><img src="../189images/zxkf.jpg"></a>
+								</li>
+							</ul>
+						</li>
+						<li><span>|</span></li>
+
+						<li class="h">
+							<div class="img6_top_right"></div>
+							<a href="#" class="daili">代理专区</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- logo通栏 -->
+			<div class="header_content">
+				<div class="header_content_logo">
+					<a href="#"><img src="../189images/logo.png" /></a>
+				</div>
+				<div class="content_city">
+					<!-- city -->
+					<div>
+						<div class="content_dv">
+							<div class="city_dv1" id="city_dv1" onchange="showCities()"><a href="#">广东</a></div>
+							<div class="city_dv2" id="city_dv2">
+								<li class="mt10">
+									<span class="sp">A-G</span>
+									<span class="dp1">
+										<a href="#" onclick="city_bj()">北京</a>
+										<a href="#" onclick="city_ah()">安徽</a>
+										<a href="#" onclick="city_cq()">重庆</a>
+										<a href="#" onclick="city_fj()">福建</a>
+										<a href="#" onclick="city_gd()">广东</a>
+										<a href="#" onclick="city_gs()">甘肃</a>
+										<a href="#" onclick="city_gx()">广西</a>
+										<a href="#" onclick="city_gz()">贵州</a></span>
+								</li>
+								<li class="mt10">
+									<span class="sp">H-J</span>
+									<span class="dp1">
+										<a href="#" onclick="city_hb()">湖北</a>
+										<a href="#" onclick="city_hn()">湖南</a>
+										<a href="#" onclick="city_hb()">河北</a>
+										<a href="#" onclick="city_hn()">河南</a>
+										<a href="#" onclick="city_han()">海南</a>
+										<a href="#" onclick="city_hlj()">黑龙江</a>
+										<a href="#" onclick="city_js()">江苏</a>
+										<a href="#" onclick="city_jl()">吉林</a>
+										<a href="#" onclick="city_kx()">江西</a>
+									</span>
+								</li>
+								<li class="mt10">
+									<span class="sp">L-S</span>
+									<span class="dp1">
+										<a href="#" onclick="city_ln()">辽宁</a>
+										<a href="#" onclick="city_nmg()">内蒙古</a>
+										<a href="#" onclick="city_nx()">宁夏</a>
+										<a href="#" onclick="city_qh()">青海</a>
+										<a href="#" onclick="city_sd()">山东</a>
+										<a href="#" onclick="city_sh()">上海</a>
+										<a href="#" onclick="city_sx()">陕西</a>
+										<a href="#" onclick="city_zj()">浙江</a>
+										<a href="#" onclick="city_sc()">四川</a>
+									</span>
+								</li>
+								<li class="mt10">
+									<span class="sp">T-Z</span>
+									<span class="dp1">
+										<a href="#" onclick="city_tj()">天津</a>
+										<a href="#" onclick="city_xj()">新疆</a>
+										<a href="#" onclick="city_xz">西藏</a>
+										<a href="#" onclick="city_yn">云南</a>
+										<a href="#" onclick="city_zj">浙江</a>
+									</span>
+								</li>
+							</div>
+						</div>
+						<div class="city_dv3" id="city_dv3">
+							<span class="city_span2" id="city_span2"><a href="#" >广东</a>
+							</span>
+							<div class="city_dv4" id="city_dv4">
+								<li class="mt5"><a href="#">广东</a>
+									<a href="#" onclick="city_gd_gz()">广州</a>
+									<a href="#" onclick="city_gd_sz()" id="sz">深圳</a>
+									<a href="#" onclick="city_gd_dg()">东莞</a>
+									<a href="#" onclick="city_gd_fs()">佛山</a>
+									<a href="#" onclick="city_gd_zs()">中山</a>
+									<a href="#" onclick="city_gd_dz()">惠州</a>
+									<a href="#" onclick="city_gd_jm()">江门</a>
+									<a href="#" onclick="city_gd_zh()">珠海</a>
+									<a href="#" onclick="city_gd_st()">汕头</a>
+									<a href="#" onclick="city_gd_jy()">揭阳</a>
+									<a href="#" onclick="city_gd_cz()">潮州</a>
+									<a href="#" onclick="city_gd_sw()">汕尾</a>
+									<a href="#" onclick="city_gd_zj()">湛江</a>
+									<a href="#" onclick="city_gd_mm()">茂名</a>
+									<a href="#" onclick="city_gd_yj()">阳江</a>
+									<a href="#" onclick="city_gd_yf()">云浮</a>
+									<a href="#" onclick="city_gd_mz()">梅州</a>
+									<a href="#" onclick="city_gd_zq()">肇庆</a>
+									<a href="#" onclick="city_gd_hy()">河源</a>
+									<a href="#" onclick="city_gd_sg()">韶关</a>
+								</li>
+							</div>
+						</div>
+					</div>
+					<!-- 搜索框 -->
+					<div class="content_right">
+						<div class="content_search">
+							<form>
+								<div class="seach_cp">
+									<div class="input_nav"><a href="#">搜产品</a></div>
+								</div>
+								<div class="input_box">
+									<img src="../189images/ioc_01.gif" />
+									<input type="text" />
+									<a href="#">搜索</a>
+								</div>
+								<div class="input_text">
+									<a href="#">充值送好礼</a>
+									<a href="#">销户号码缴费</a>
+								</div>
+							</form>
+						</div>
+						<div class="content_ad">
+							<a href="#"><img src="../189images/xingka.jpg"></a>
+						</div>
+						<div class="content_ewm">
+							<a href="#"><img src="../189images/headdlewm.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 头部导航nav -->
+			<div class="header_nav">
+				<div class="content_nav">
+					<div class="nav">
+						<a class="topxiala"></a>
+						<!-- 下拉分类导航 -->
+						<div class="nav_down">
+							<ul>
+								<!-- 中间左边下拉内容 -->
+								<li class="down_01">
+									<a href="#" target="_blank">手机/配件</a>
+									<div class="down_00_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">本月热销</span>
+											<span class="down_sp2">
+												<a href="#">华为nova6</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_2">
+											<span class="down_sp1">活动</span>
+											<span class="down_sp2">
+												<a href="#">喜迎2020大buy年</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_3">
+											<span class="down_sp3"><a href="#"><img src="../189images/xuyue.jpg"></a></span>
+											<span class="down_sp4">
+												<a href="#"><img src="../189images/xinzhuangkd2.jpg"></a>
+
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="down_02">
+									<a href="#" target="_blank">套餐/</a>
+									<a href="#" target="_blank">靓号</a>
+									<div class="down_01_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">上网多</span>
+											<span class="down_sp2">
+												<a href="#"> 畅想99元套餐</a>
+												<span class="span_s">|</span>
+												<a href="#"> 5G套餐</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">月租低</span>
+											<span class="down_sp2">
+												<a href="#"> 手机副卡</a>
+												<span class="span_s">|</span>
+											</span>
+
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">其他</span>
+											<span class="down_sp2">
+												<a href="#"> 无忧卡</a>
+												<span class="span_s">|</span>
+											</span>
+
+										</div>
+										<div class="down_00_ul_2">
+											<span class="down_sp1">活动</span>
+											<span class="down_sp2">
+												<a href="#">喜迎2020大buy年</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_5">
+											<span class="down_sp3"><a href="#"><img src="../189images/xuyue.jpg"></a></span>
+											<span class="down_sp4">
+												<a href="#"><img src="../189images/xinzhuangkd2.jpg"></a>
+
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="down_03">
+									<a href="#" target="_blank">宽带</a>
+									<div class="down_02_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">宽带办理</span>
+											<span class="down_sp2">
+												<a href="#">新装宽带</a>
+												<span class="span_s">|</span>
+												<a href="#">百兆分享计划</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带包年续约</a>
+												<span class="span_s">|</span>
+												<a href="#">天翼高清护粮网电视服务</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">宽带套餐</span>
+											<span class="down_sp2">
+												<a href="#">双百兆</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带+手机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带+4K高清电视服务</a>
+												<span class="span_s">|</span>
+												<a href="#">单宽带</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">宽带业务</span>
+											<span class="down_sp2">
+												<a href="#">宽带提速</a>
+												<span class="span_s">|</span>
+												<a href="#">全屋宽带</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带增值业务</a>
+
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">宽带专区</span>
+											<span class="down_sp2">
+												<a href="#">宽带订单查询</a>
+												<span class="span_s">|</span>
+												<a href="#">装移机进度查询</a>
+												<span class="span_s">|</span>
+												<a href="#">故障快修</a>
+												<span class="span_s">|</span>
+												<a href="#">修障进度查询</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带服务专区</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带充值</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带停机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带复机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带账号找回</a>
+												<span class="span_s">|</span>
+												<a href="#">IPTV密码服务</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带测速</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带密码服务</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带预拆机</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="down_04">
+									<a href="#" target="_blank">智能</a>
+									<div class="down_03_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">智能业务</span>
+											<span class="down_sp2">
+												<a href="#">智能提速</a>
+												<span class="span_s">|</span>
+												<a href="#">全屋wifi</a>
+												<span class="span_s">|</span>
+												<a href="#">智慧家庭</a>
+												<span class="span_s">|</span>
+												<a href="#">天翼看家</a>
+												<span class="span_s">|</span>
+												<a href="#">天翼云盘</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+
+										<div class="down_00_ul_3">
+											<span class="down_sp3"><a href="#"><img src="../189images/xuyue.jpg"></a></span>
+											<span class="down_sp4">
+												<a href="#"><img src="../189images/xinzhuangkd2.jpg"></a>
+
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="down_05">
+									<a href="#" target="_blank">话费</a>
+									<div class="down_04_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">充值缴费</span>
+											<span class="down_sp2">
+												<a href="#">网银缴费</a>
+												<span class="span_s">|</span>
+												<a href="#">充值卡充值</a>
+												<span class="span_s">|</span>
+												<a href="#">业务订单支付</a>
+												<span class="span_s">|</span>
+												<a href="#">电子发票开具</a>
+												<span class="span_s">|</span>
+												<a href="#">销号充值缴费</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+
+										<div class="down_00_ul_1">
+											<span class="down_sp1">流量卡充值</span>
+											<span class="down_sp2">
+												<a href="#">流量卡充值</a>
+												<span class="span_s">|</span>
+												<a href="#">流量卡直值</a>
+												<span class="span_s">|</span>
+												<a href="#">流量卡账户查询</a>
+												<span class="span_s">|</span>
+
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">冲缴记录查询</span>
+											<span class="down_sp2">
+												<a href="#">冲缴记录查询</a>
+												<span class="span_s">|</span>
+												<a href="#">充值卡记录查询</a>
+												<span class="span_s">|</span>
+
+											</span>
+										</div>
+										<div class="down_00_ul_3">
+											<span class="down_sp3"><a href="#"><img src="../189images/xuyue.jpg"></a></span>
+											<span class="down_sp4">
+												<a href="#"><img src="../189images/xinzhuangkd2.jpg"></a>
+
+											</span>
+										</div>
+
+									</div>
+								</li>
+								<li class="down_06">
+									<a href="#" target="_blank">费用</a>
+									<div class="down_05_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">费用信息查询</span>
+											<span class="down_sp2">
+												<a href="#">账单查询</a>
+												<span class="span_s">|</span>
+												<a href="#">电子发票</a>
+												<span class="span_s">|</span>
+												<a href="#">实时话费</a>
+												<span class="span_s">|</span>
+												<a href="#">余额查询</a>
+												<span class="span_s">|</span>
+												<a href="#">信用额度</a>
+												<span class="span_s">|</span>
+												<a href="#">话费还还</a>
+												<span class="span_s">|</span>
+												<a href="#">流量卡账单查询</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+
+										<div class="down_00_ul_1">
+											<span class="down_sp1">使用信息查询</span>
+											<span class="down_sp2">
+												<a href="#">套餐用量</a>
+												<span class="span_s">|</span>
+												<a href="#">流量查询</a>
+												<span class="span_s">|</span>
+												<a href="#">详单查询</a>
+												<span class="span_s">|</span>
+
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">积分信息查询</span>
+											<span class="down_sp2">
+												<a href="#">积分查询</a>
+												<span class="span_s">|</span>
+												<a href="#">积分兑换</a>
+												<span class="span_s">|</span>
+												<a href="#">积分兑换记录</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">业务进度查询</span>
+											<span class="down_sp2">
+												<a href="#">我的订单</a>
+												<span class="span_s">|</span>
+												<a href="#">装机预约机催装</a>
+												<span class="span_s">|</span>
+												<a href="#">故障催修</a>
+												<span class="span_s">|</span>
+												<a href="#">投诉进度处理</a>
+												<span class="span_s">|</span>
+												<a href="#">业务办理记录</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">基础信息查询</span>
+											<span class="down_sp2">
+												<a href="#">我的电话号码</a>
+												<span class="span_s">|</span>
+												<a href="#">已订业务</a>
+												<span class="span_s">|</span>
+												<a href="#">增值业务查询以及退订</a>
+												<span class="span_s">|</span>
+												<a href="#">我的服务提醒</a>
+												<span class="span_s">|</span>
+												<a href="#">我的PUK/PIN码</a>
+												<span class="span_s">|</span>
+												<a href="#">电子记录查询</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带帐号找回</a>
+												<span class="span_s">|</span>
+												<a href="#">营业网点信息</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_3">
+											<span class="down_sp3"><a href="#"><img src="../189images/xuyue.jpg"></a></span>
+											<span class="down_sp4">
+												<a href="#"><img src="../189images/xinzhuangkd2.jpg"></a>
+
+											</span>
+										</div>
+
+									</div>
+								</li>
+								<li class="down_07">
+									<a href="#" target="_blank">业务</a>
+									<div class="down_06_ul">
+										<div class="down_00_ul_1">
+											<span class="down_sp1">手机业务</span>
+											<span class="down_sp2">
+												<a href="#">手机套餐订购</a>
+												<span class="span_s">|</span>
+												<a href="#">流量包订购及退订</a>
+												<span class="span_s">|</span>
+												<a href="#">语音包订购</a>
+												<span class="span_s">|</span>
+												<a href="#">国际及港澳台漫游</a>
+												<span class="span_s">|</span>
+												<a href="#">副卡加装</a>
+												<span class="span_s">|</span>
+												<a href="#">手机停/复机</a>
+												<span class="span_s">|</span>
+												<a href="#">呼叫转移设置</a>
+												<span class="span_s">|</span>
+												<a href="#">手机挂失</a>
+												<span class="span_s">|</span>
+												<a href="#">手机解挂</a>
+												<span class="span_s">|</span>
+												<a href="#">手机紧急开机</a>
+												<span class="span_s">|</span>
+												<a href="#">VolTE开通</a>
+												<span class="span_s">|</span>
+												<a href="#">成空功能</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+
+										<div class="down_00_ul_1">
+											<span class="down_sp1">宽带业务</span>
+											<span class="down_sp2">
+												<a href="#">宽带新装</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带预约</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带提速</a>
+												<span class="span_s">|</span>
+												<a href="#">智能组网</a>
+												<span class="span_s">|</span>
+												<a href="#">IPTV高清户端电视</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带移机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带预拆机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带停/复机</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带密码服务</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">固话业务</span>
+											<span class="down_sp2">
+												<a href="#">固话停/复机</a>
+												<span class="span_s">|</span>
+
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">客户信息修改</span>
+											<span class="down_sp2">
+												<a href="#">客户资料修改</a>
+												<span class="span_s">|</span>
+												<a href="#">客户密码重置</a>
+												<span class="span_s">|</span>
+												<a href="#">客户密码修改</a>
+												<span class="span_s">|</span>
+												<!-- <a href="#">投诉进度处理</a>
+												<span class="span_s">|</span>
+												<a href="#">业务办理记录</a>
+												<span class="span_s">|</span> -->
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">行业应用</span>
+											<span class="down_sp2">
+												<a href="#">天翼之旅</a>
+												<span class="span_s">|</span>
+												<a href="#">安保e通</a>
+												<span class="span_s">|</span>
+												<a href="#">企视通</a>
+												<span class="span_s">|</span>
+												<a href="#">外勤e通(精定位)</a>
+												<span class="span_s">|</span>
+												<!-- <a href="#">我的PUK/PIN码</a>
+												<span class="span_s">|</span>
+												<a href="#">电子记录查询</a>
+												<span class="span_s">|</span>
+												<a href="#">宽带帐号找回</a>
+												<span class="span_s">|</span> -->
+												<a href="#">智能名片</a>
+												<span class="span_s">|</span>
+											</span>
+										</div>
+										<div class="down_00_ul_1">
+											<span class="down_sp1">游子e族</span>
+											<span class="down_sp2">
+												<a href="#">查询游子e族积分</a>
+												<span class="span_s">|</span>
+												<a href="#">兑换游子e族积分</a>
+												<span class="span_s">|</span>
+												<a href="#">游子情亲帐号操作</a>
+												<span class="span_s">|</span>
+
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 导航 -->
+					<ul class="top_content_nav">
+						<li><a href="#" class="nav_index">首页</a></li>
+						<li><a href="#">号卡</a></li>
+						<li><a href="#">宽带光纤</a></li>
+						<li><a href="#">老用户</a></li>
+						<li><a href="#">省钱</a></li>
+						<li><a href="#">自助服务</a></li>
+						<li><a href="#">同城惠</a></li>
+						<li><a href="#">资费专区</a></li>
+						<li><a href="#">服务监督</a></li>
+					</ul>
+					<!-- 登陆 -->
+					<ul class="nav_logo">
+						<li class="nav_logo_01"></li>
+						<li class="nav_logo_02">
+							<a href="#">登陆</a>
+						</li>
+						<li class="nav_logo_03">|</li>
+						<li class="nav_logo_04">
+							<a href="#">注册</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- banner大图和左边框 -->
+		<div class="banner">
+			<!-- banner_right -->
+			<div class="banner_right">
+				<div class="right_box">
+					<!-- 专区/公告 -->
+					<div class="box_top">
+						<div class="box_top_content" id="box_top_content">
+							<ul class="tabble_meun">
+								<li class="meun_01" id="meun_01">
+									<a href="#" onmouseover="hxfw()"><span>欢享服务</span></a>
+									<span class="span_n">|</span>
+								</li>
+								<li class="meun_02" id="meun_02">
+									<a href="#" onmouseover="czg()"><span>超值购</span></a>
+								</li>
+							</ul>
+							<div class="table_cont">
+								<!-- 专区 -->
+								<div class="cont_cur" id="pic_list_1">
+									<div  class="scroll_hor_a">
+										<a href="#" class="next" onclick="nextImg()"></a>
+										<a href="#" class="prev" onclick="nextImg()"></a>
+										<div class="cont_box">
+											<ul class="list_img">
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/star.png"></a>
+															<p class="xjfw">星级服务</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/money.png"></a>
+															<p class="xjfw">积分商城</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/fukai2.png"></a>
+															<p class="xjfw">副卡专区</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/qian2.png"></a>
+															<p class="xjfw">话费查询</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/qian1.png"></a>
+															<p class="xjfw">资费专区</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/cilcle.png"></a>
+															<p class="xjfw">漫游服务</p>
+														</span>
+													</div>
+												</li>
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/paio.png"></a>
+															<p class="xjfw">账单缴费</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/5g.png"></a>
+															<p class="xjfw">5G服务</p>
+														</span>
+													</div>
+												</li>
+												<!-- <li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/star.png"></a>
+															<p class="xjfw">星级服务</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/money.png"></a>
+															<p class="xjfw">积分商城</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/fukai2.png"></a>
+															<p class="xjfw">副卡专区</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/qian2.png"></a>
+															<p class="xjfw">话费查询</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/qian1.png"></a>
+															<p class="xjfw">资费专区</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/cilcle.png"></a>
+															<p class="xjfw">漫游服务</p>
+														</span>
+													</div>
+												</li>
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/paio.png"></a>
+															<p class="xjfw">账单缴费</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/5g.png"></a>
+															<p class="xjfw">5G服务</p>
+														</span>
+													</div>
+												</li> -->
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 公告 -->
+								<div class="cont" id="pic_list_0">
+									<div  class="scroll_hor_a">
+										<a href="#" class="next" onclick="prevImg()"></a>
+										<a href="#" class="prev" onclick="prevImg()"></a>
+										<div class="cont_box">
+											<ul class="list_img">
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/phonewifi.png"></a>
+															<p class="xjfw">流量超市</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/phonewifi.png"></a>
+															<p class="xjfw">流量超市</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/aixin.png"></a>
+															<p class="xjfw">爱心服务</p>
+														</span>
+													</div>
+												</li>
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/sanren.png"></a>
+															<p class="xjfw">账单缴费</p>
+														</span>
+
+													</div>
+												</li>
+												<!-- <li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/phonewifi.png"></a>
+															<p class="xjfw">流量超市</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/phonewifi.png"></a>
+															<p class="xjfw">流量超市</p>
+														</span>
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/aixin.png"></a>
+															<p class="xjfw">爱心服务</p>
+														</span>
+
+
+													</div>
+												</li>
+												<li>
+													<div class="mt15">
+														<span class="mt15_sp">
+															<a class="a_img"><img src="../189images/sanren.png"></a>
+															<p class="xjfw">账单缴费</p>
+														</span>
+													</div>
+												</li> -->
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box_hn"></div>
+					<!-- 充话费 -->
+					<div>
+						<div class="box_content">
+							<ul class="tabN">
+								<li class="on" id="phone" onclick="show1()">手机</li>
+								<li id="kuandai" onclick="show2()">宽带</li>
+								<li style="border: none;" id="guhua" onclick="show3()">固话</li>
+							</ul>
+							<!-- 手机 -->
+							<div class="tabphone" id="tabphone">
+								<label class="la"></label>
+								<div class="pr">
+									<em>号码</em>
+									<input class="phonenumber" name="number" id="phonenumber" maxlength="11" type="text" placeholder="请输入手机号码" />
+								</div>
+								<div class="money" id="money">
+									<em>金额</em>
+									<input id="phonemoney" name="phonemoney" type="hidden" />
+									<span id="p_sp">100</span>
+									<a href="#" class="link">查欠费</a>
+									<ul class="amount" id="amount"  onmouseout="aUp()" onmouseout="aDown()">
+										<li id="amount1" onclick="changBg1()">50</li>
+										<li id="amount2" onclick="changBg2()">100</li>
+										<li id="amount3" onclick="changBg3()">200</li>
+										<li id="amount4" onclick="changBg4()">300</li>
+										<li id="amount5" onclick="changBg5()">500</li>
+									</ul>
+								</div>
+								<div class="bind">
+									<input type="checkbox" name="checkbox1" id="checkbox1" disabled="disabled" checked="checked" class="vm" />
+									<label for="checkbox1">同时支付帐户下其他号码欠费</label>
+								</div>
+								<div class="send">
+									<a href="#" onclick="onSend()" class="btnsub">立即充值|9.95折</a>
+									<a href="#" class="btnsub_a">宽带续约缴费</a>
+								</div>
+							</div>
+							<!-- 宽带 -->
+							<div class="tabNcon" style="display: none;" id="tabNcon">
+								<div class="area">
+									<em>地区</em>
+									<span id="city_gd" style="width: 115px;">广州市</span>
+									<ul class="kd_ul" id="city_kd">
+										<li>广州市</li>
+										<li>深圳市</li>
+										<li>东莞市</li>
+										<li>佛山市</li>
+										<li>中山市</li>
+										<li>惠州市</li>
+										<li>江门市</li>
+										<li>珠海市</li>
+										<li>汕头市</li>
+										<li>揭阳市</li>
+										<li>潮州市</li>
+										<li>汕尾市</li>
+										<li>湛江市</li>
+										<li>茂名市</li>
+										<li>阳江市</li>
+										<li>云浮市</li>
+										<li>梅州市</li>
+										<li>肇庆市</li>
+										<li>河源市</li>
+										<li>韶关市</a>
+									</ul>
+								</div>
+								<div class="username">
+									<em>帐号</em>
+									<input class="usernumber" name="usernumber" id="usernumber" maxlength="30" type="text" placeholder="无需输入后缀" />
+									<div class="userhidden">
+										<span class="red_font">请选择宽带帐号类型<br /></span>
+										<div id="email_type">
+											<span onclick="">@163.gd</span>
+											<span onclick="">@IPTV.gd</span>
+											<span onclick="">@green.gd</span>
+											<span onclick="">@hzunis.v.gd</span>
+											<span onclick="">@163.dg</span>
+											<span onclick="">@free.gd</span>
+											<br />
+										</div>
+									</div>
+								</div>
+								<div class="money" id="money">
+									<em>金额</em>
+									<input id="phonemoney" name="phonemoney" type="hidden" value="100" />
+									<span class="p_sp">100</span>
+									<a href="#" class="link">查欠费</a>
+									<ul class="amount">
+										<li class="amount1" onclick="changBg1()">50</li>
+										<li class="amount2" onclick="changBg2()">100</li>
+										<li class="amount3" onclick="changBg3()">200</li>
+										<li class="amount4" onclick="changBg4()">300</li>
+										<li class="amount5" onclick="changBg5()">500</li>
+									</ul>
+								</div>
+								<div class="bind">
+									<input type="checkbox" name="checkbox1" id="checkbox1" disabled="disabled" checked="checked" class="vm" />
+									<label for="checkbox1">同时支付帐户下其他号码欠费</label>
+								</div>
+								<div class="send">
+									<a href="#" onclick="onSend()" class="btnsub">立即充值|9.95折</a>
+									<a href="#" class="btnsub_a">宽带续约缴费</a>
+								</div>
+							</div>
+							<!-- 固话 -->
+							<div class="tabNcon" style="display: none;" id="guhuan">
+								<div class="area">
+									<em>地区</em>
+									<span id="city_gd" style="width: 115px;">广州市</span>
+									<ul class="kd_ul" id="city_kd">
+										<li>广州市</li>
+										<li>深圳市</li>
+										<li>东莞市</li>
+										<li>佛山市</li>
+										<li>中山市</li>
+										<li>惠州市</li>
+										<li>江门市</li>
+										<li>珠海市</li>
+										<li>汕头市</li>
+										<li>揭阳市</li>
+										<li>潮州市</li>
+										<li>汕尾市</li>
+										<li>湛江市</li>
+										<li>茂名市</li>
+										<li>阳江市</li>
+										<li>云浮市</li>
+										<li>梅州市</li>
+										<li>肇庆市</li>
+										<li>河源市</li>
+										<li>韶关市</a>
+									</ul>
+								</div>
+								<div class="username">
+									<em>帐号</em>
+									<input class="usernumber" name="usernumber" id="usernumber" maxlength="8" type="text" placeholder="无需输入号区" />
+									<!-- <div class="userhidden">
+										<span class="red_font">请选择宽带帐号类型<br /></span>
+										<div id="email_type">
+											<span onclick="">@163.gd</span>
+											<span onclick="">@IPTV.gd</span>
+											<span onclick="">@green.gd</span>
+											<span onclick="">@hzunis.v.gd</span>
+											<span onclick="">@163.dg</span>
+											<span onclick="">@free.gd</span>
+											<br />
+										</div>
+									</div> -->
+								</div>
+								<div class="money" id="money">
+									<em>金额</em>
+									<input id="phonemoney" name="phonemoney" type="hidden" value="100" />
+									<span id="p_sp1">100</span>
+									<a href="#" class="link">查欠费</a>
+									<ul  class="amount">
+										<li id="amount6" onclick="changBg6()">50</li>
+										<li id="amount7" onclick="changBg7()">100</li>
+										<li id="amount8" onclick="changBg8()">200</li>
+										<li id="amount9" onclick="changBg9()">300</li>
+										<li id="amount10" onclick="changBg10()">500</li>
+									</ul>
+								</div>
+								<div class="bind">
+									<input type="checkbox" name="checkbox1" id="checkbox1" disabled="disabled" checked="checked" class="vm" />
+									<label for="checkbox1">同时支付帐户下其他号码欠费</label>
+								</div>
+								<div class="send">
+									<a href="#" onclick="onSend()" class="btnsub">立即充值|9.95折</a>
+									<a href="#" class="btnsub_a">宽带续约缴费</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 底部滑动公告 -->
+					<div class="box_hn2"></div>
+					<div class="box_bottom">
+						<span class="bottom_sp1"><a href="#">公告</a></span>
+						<span class="bottom_sp2">
+							<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3">
+								<a href="#" target="_blank">做这个真难啊</a>
+								<a href="#" target="_blank">我都快要没了</a>
+								<a href="#" target="_blank">一天到晚就干这个</a>
+								<a href="#" target="_blank">有时候很有趣</a>
+								<a href="#" target="_blank">但是没做出来就很难受</a>
+								<a href="#" target="_blank">干巴得!</a>
+							</marquee>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- banner -->
+			<div class="banner_show" id="banner_show" onmouseover="stopLunTimer()" onmouseout="startLunTimer()">
+				<a href="#" style="z-index:6"><img src="../189images/bg1.jpg" class="hidden" /></a>
+				<a href="#" style="z-index:5"><img src="../189images/bg2.jpg" class="hidden" /></a>
+				<a href="#" style="z-index:4"><img src="../189images/bg3.jpg" class="hidden" /></a>
+				<a href="#" style="z-index:3"><img src="../189images/bg4.png" class="hidden" /></a>
+				<a href="#" style="z-index:2"><img src="../189images/bg5.jpg" class="hidden" /></a>
+				<a href="#" style="z-index:1"><img src="../189images/bg6.jpg" class="hidden" /></a>
+				<ul class="show_list">
+					<li class="bgwhite" onclick="pressBtn(0)"></li>
+					<li onclick="pressBtn(1)"></li>
+					<li onclick="pressBtn(2)"></li>
+					<li onclick="pressBtn(3)"></li>
+					<li onclick="pressBtn(4)"></li>
+					<li onclick="pressBtn(5)"></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 腰带 -->
+		<div class="recommed">
+			<div class="yaod" id="pic_list_20">
+				<div class="yaod_box">
+					<ul class="yaod_box_list">
+						<li><a href="#"><img src="../189images/haiweiad.jpg"></a></li>
+						<li><a href="#"><img src="../189images/haiweiad.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommed_right">
+				<div class="slides" onmouseover="stopTimer()" onmouseout="startTimer()" id="slides">
+					<ul class="slides_container">
+						<div class="slides_control">
+							<li class="control_li">
+								<div class="control_img1">
+									<a href="#" class="ml_0"><img src="../189images/11.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/12.png"></a>
+									<a href="#" class="ml_0"><img src="../189images/13.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/14.jpg"></a>
+								</div>
+								<div class="control_img2">
+									<a href="#" class="ml_0"><img src="../189images/15.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/16.png"></a>
+									<a href="#" class="ml_0"><img src="../189images/17.png"></a>
+									<a href="#" class="ml_0"><img src="../189images/18.jpg"></a>
+								</div>
+							</li>
+							<li class="control_li">
+								<div class="control_img1">
+									<a href="#" class="ml_0"><img src="../189images/1.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/2.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/5.png"></a>
+									<a href="#" class="ml_0"><img src="../189images/6.png"></a>
+								</div>
+								<div class="control_img2">
+									<a href="#" class="ml_0"><img src="../189images/3.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/4.jpg"></a>
+									<a href="#" class="ml_0"><img src="../189images/7.png"></a>
+									<a href="#" class="ml_0"><img src="../189images/8.jpg"></a>
+								</div>
+							</li>
+						</div>
+					</ul>
+					<a class="prev2" onclick="pressLi()">prev</a>
+					<a class="next2" onclick="pressLi()">next</a>
+					<ul class="pangination">
+						<li class="curren"><a>1</a></li>
+						<li class="curren"><a>2</a></li>
+					</ul>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<!-- 作者:李茂 20200901 -->
+		<!-- main -->
+		<div class="main">
+			<!-- 极客炫耀 -->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_01.png">
+						</div>
+						<div class="tex f1">
+							好宝贝,够任性,就是要炫耀!
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left">
+						<div class="gk_left">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/ie.png"></p>
+									<p class="mt4">光速冲浪</p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/4G.png"></p>
+									<p class="mt4">畅想套餐</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/bigger.jpg">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">畅想99元套餐</a></li>
+							<li><a href="#">手机副卡</a></li>
+						</ul>
+					</span>
+					<span class="go_img">
+						<ul class="img_left_u1">
+							<li>
+								<p class="left_u1_l1"><a href="#">畅想20G</a></p>
+								<p class="f12"><a href="#">通用流量</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/20G.jpg"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l1"><a href="#">畅聊300分钟</a></p>
+								<p class="f12"><a href="#">全国通话</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/100M.png"></a></p>
+							</li>
+						</ul>
+						<div class="go_img_div" id="pic_list_21">
+							<div class="box">
+								<ul class="list">
+									<li>
+										<p class="left_u1_l1"><a href="#">99元畅想套餐</a></p>
+										<p class="f12"><a href="#"></a></p>
+										<p class="f14 jkxy3"><a href="#"></a></p>
+										<p class="mt10"><a href="#"><img src="../189images/100M.png"></a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="img_left_u2">
+							<li>
+								<p class="left_u1_l2"><a href="#">畅想流量</a></p>
+								<p class="f14"><a href="#">20G通用流量</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/call.png"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l2"><a href="#">1元1G</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/wansjouji.png"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l2"><a href="#">畅想流量</a></p>
+								<p class="f14"><a href="#">20G通用流量</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/huojian.jpg"></a></p>
+							</li>
+						</ul>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_2">
+							<a class="next3" onclick="rgt()"></a>
+							<a class="prev3" onclick="rgt()"></a>
+							<div class="box2">
+								<ul class="list2" id="list2">
+									<li class="changLi"><a href="#"><img src="../189images/5G3.jpg"></a></li>
+									<li class="changLi"><a href="#"><img src="../189images/tisu.jpg"></a></li>
+									<li class="changLi"><a href="#"><img src="../189images/xinkai2.jpg"></a></li>
+									<li class="changLi"><a href="#"><img src="../189images/5G3.jpg"></a></li>
+									<li class="changLi"><a href="#"><img src="../189images/200G.png"></a></li>
+									<li class="changLi"><a href="#"><img src="../189images/xinkai2.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<!-- 快乐e家 -->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_02.png">
+						</div>
+						<div class="tex f1">
+							爱自己，爱家庭，爱生活！
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left" style="background:#ff9767">
+						<div class="gk_left" style="background: #ff5c2b;">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/meiyuan.png"></p>
+									<p class="mt4">宽带</p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/newtv.png"></p>
+									<p class="mt4">天翼电视服务</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/quanjiagx.png">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">双百兆分享</a></li>
+							<li><a href="#">IPTV</a></li>
+							<li><a href="#">手机+宽带</a></li>
+							<li><a href="#">宽带预约</a></li>
+							<li><a href="#">全屋wifi</a></li>
+							<li><a href="#">情亲副卡</a></li>
+						</ul>
+					</span>
+					<span class="go_img2">
+						<ul class="ml_17">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">300Mbs融合套餐</a></p>
+								<p class="f12"><a href="#">60GB国内流量+1000分钟国内语音</a></p>
+								<p class="f14"><a href="#">￥229/月</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/dazhe.png"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">居家办理</a></p>
+								<p class="f14"><a href="#">在线办理</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/free.png"></a></p>
+							</li>
+						</ul>
+						<ul class="ml_17" style="float: right;">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">宽带专区</a></p>
+								<p class="f12"><a href="#">高速光纤</a></p>
+								<p class="f14"><a href="#"></a></p>
+								<p class="mt10"><a href="#"><img src="../189images/again.png"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">200Mbs光纤宽带</a></p>
+								<p class="f14"><a href="#">￥2200/月</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/jiedianhua.jpg"></a></p>
+							</li>
+						</ul>
+						<div class="ml_l7_center">
+							<p class="left_u1_l1 m70"><a href="#">宽带提速</a></p>
+							<p class="f12"><a href="#"></a></p>
+							<p class="f14"><a href="#"></a></p>
+							<p class="mt30"><a href="#"><img src="../189images/tisu.png"></a></p>
+						</div>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_2">
+							<!-- 	<a class="next3"></a>
+							<a class="prev3"></a> -->
+							<div class="box2">
+								<ul class="list2">
+									<!-- <li><a href="#"><img src="../189images/5G3.jpg" ></a></li> -->
+									<li><a href="#"><img src="../189images/200G.png"></a></li>
+									<!-- 	<li><a href="#"><img src="../189images/xinkai2.jpg" ></a></li>
+									<li><a href="#"><img src="../189images/5G3.jpg" ></a></li>
+									<li><a href="#"><img src="../189images/200G.png" ></a></li>
+									<li><a href="#"><img src="../189images/xinkai2.jpg" ></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<!-- 商务舱 -->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_03.png">
+						</div>
+						<div class="tex f1">
+							商务工作，由我自由驰骋！
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left" style="background:#9de090">
+						<div class="gk_left" style="background: #62c751;">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/fly.png"></p>
+									<p class="mt4">漫游专区</p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/wifi3.png"></p>
+									<p class="mt4">畅想套餐</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/xinzhuangkd.png">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">畅想99元套餐</a></li>
+							<li><a href="#">IPTV</a></li>
+							<li><a href="#">手机+宽带</a></li>
+							<li><a href="#">宽带预约</a></li>
+							<li><a href="#">全屋wifi</a></li>
+							<li><a href="#">情亲副卡</a></li>
+							<li><a href="#">宽带语言</a></li>
+						</ul>
+					</span>
+					<span class="go_img2">
+						<div class="ml_l7_center">
+							<p class="left_u1_l1 m70"><a href="#">10元加餐包</a></p>
+							<p class="f12"><a href="#">10元500MB全国流量</a></p>
+							<p class="f14"><a href="#">10元</a></p>
+							<p class="mt30"><a href="#"><img src="../189images/50M.png"></a></p>
+						</div>
+						<ul class="ml_17" style="float: right;">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">宽带提速</a></p>
+								<p class="f12"><a href="#">1元享提速</a></p>
+								<p class="f14"><a href="#"></a></p>
+								<p class="mt10"><a href="#"><img src="../189images/liangrenjia.jpg"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">游戏宽带</a></p>
+								<p class="f14"><a href="#">上网更快</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/kandiannao.jpg"></a></p>
+							</li>
+						</ul>
+						<div class="ml_l7_center">
+							<p class="left_u1_l1 m70"><a href="#">春暖花开</a></p>
+							<p class="f12"><a href="#"></a></p>
+							<p class="f14"><a href="#">9.9元10G流量包</a></p>
+							<p class="mt30"><a href="#"><img src="../189images/4K.png"></a></p>
+						</div>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_3">
+							<a class="next3" onclick="rgt()"></a>
+							<a class="prev3" onclick="rgt()"></a>
+							<div class="box2">
+								<ul class="list2">
+									<li><a href="#"><img src="../189images/xinkai2.jpg"></a></li>
+									<li><a href="#"><img src="../189images/200G.png"></a></li>
+									<li><a href="#"><img src="../189images/5G3.jpg"></a></li>
+									<li><a href="#"><img src="../189images/5G3.jpg"></a></li>
+									<li><a href="#"><img src="../189images/200G.png"></a></li>
+									<li><a href="#"><img src="../189images/xinkai2.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<!-- 心意-->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_04.png">
+						</div>
+						<div class="tex f1">
+							爸爸、老公、小外甥，都要心满意足！
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left" style="background:#55cdf0">
+						<div class="gk_left" style="background: #1ba5e4;">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/e.png"></p>
+									<p class="mt4">宽带</p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/j.png"></p>
+									<p class="mt4">天翼电视服务</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/TV.png">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">宽带预约</a></li>
+							<li><a href="#">4G显示流量包</a></li>
+							<li><a href="#">4G显示流量包</a></li>
+							<!-- <li><a href="#">宽带预约</a></li>
+							<li><a href="#">全屋wifi</a></li>
+							<li><a href="#">情亲副卡</a></li> -->
+						</ul>
+					</span>
+					<span class="go_img2">
+						<ul class="ml_17">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">99元畅享</a></p>
+								<p class="f12"><a href="#">20G通用流量</a></p>
+								<p class="f14"><a href="#"></a></p>
+								<p class="mt10"><a href="#"><img src="../189images/zuo.png"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">99元畅享套餐</a></p>
+								<p class="f14"><a href="#">20G通用流量</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/free.png"></a></p>
+							</li>
+						</ul>
+						<ul class="ml_17" style="float: right;">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">99元畅享套餐</a></p>
+								<p class="f12"><a href="#"></a></p>
+								<p class="f14"><a href="#"></a></p>
+								<p class="mt10"><a href="#"><img src="../189images/20G.jpg"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">99元畅享套餐</a></p>
+								<p class="f14"><a href="#">300分随心聊</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/dianshouji.jpg"></a></p>
+							</li>
+						</ul>
+						<div class="ml_l7_center">
+							<p class="left_u1_l1 m70"><a href="#">畅想流量</a></p>
+							<p class="f12"><a href="#">等你来选</a></p>
+							<p class="f14"><a href="#"></a></p>
+							<p class="mt30"><a href="#"><img src="../189images/dasr.jpg"></a></p>
+						</div>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_4">
+							<a class="next3" onclick="rgt()"></a>
+							<a class="prev3" onclick="rgt()"></a>
+							<div class="box2">
+								<ul class="list2">
+									<li><a href="#"><img src="../189images/wifi.png"></a></li>
+									<li><a href="#"><img src="../189images/tisu.jpg"></a></li>
+									<li><a href="#"><img src="../189images/suixinkan.png"></a></li>
+									<li><a href="#"><img src="../189images/wifi.png" ></a></li>
+									<li><a href="#"><img src="../189images/tisu.jpg"></a></li>
+									<li><a href="#"><img src="../189images/suixinkan.png" ></a></li>
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<!-- 超级忙-->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_05.png">
+						</div>
+						<div class="tex f1">
+							职场生活，忙碌并快乐着！
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left" style="background:#d2ea78">
+						<div class="gk_left" style="background:#abd738">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/h.png"></p>
+									<p class="mt4">光速冲浪</p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/a.png"></p>
+									<p class="mt4">畅想套餐</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/bigger.jpg">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">停/复机</a></li>
+							<li><a href="#">呼叫转移</a></li>
+							<li><a href="#">网银缴费</a></li>
+							<li><a href="#">话费查询</a></li>
+						</ul>
+					</span>
+					<span class="go_img">
+						<ul class="img_left_u1">
+							<li>
+								<p class="left_u1_l1"><a href="#">畅想20G</a></p>
+								<p class="f12"><a href="#">通用流量</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/20G.jpg"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l1"><a href="#">畅聊300分钟</a></p>
+								<p class="f12"><a href="#">全国通话</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/100M.png"></a></p>
+							</li>
+						</ul>
+						<div class="go_img_div" id="pic_list_21">
+							<div class="box">
+								<ul class="list">
+									<li>
+										<p class="left_u1_l1"><a href="#">99元畅想套餐</a></p>
+										<p class="f12"><a href="#"></a></p>
+										<p class="f14 jkxy3"><a href="#"></a></p>
+										<p class="mt10"><a href="#"><img src="../189images/100M.png"></a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="img_left_u2">
+							<li>
+								<p class="left_u1_l2"><a href="#">畅想流量</a></p>
+								<p class="f14"><a href="#">20G通用流量</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/call.png"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l2"><a href="#">1元1G</a></p>
+								<p class="f14"><a href="#">立即购买</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/wansjouji.png"></a></p>
+							</li>
+							<li>
+								<p class="left_u1_l2"><a href="#">畅想流量</a></p>
+								<p class="f14"><a href="#">20G通用流量</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/huojian.jpg"></a></p>
+							</li>
+						</ul>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_2">
+							<a class="next3"></a>
+							<a class="prev3"></a>
+							<div class="box2">
+								<ul class="list2">
+									<li><a href="#"><img src="../189images/tisu.jpg"></a></li>
+									<li><a href="#"><img src="../189images/wifi.png"></a></li>
+									<!-- <li><a href="#"><img src="../189images/suixinkan.png"></a></li> -->
+									<!-- 	<li><a href="#"><img src="../189images/wifi.png" ></a></li>
+									<li><a href="#"><img src="../189images/tisu.jpg"></a></li>
+									<li><a href="#"><img src="../189images/suixinkan.png" ></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<!-- 出行必备 -->
+			<div class="main_sports">
+				<div class="main_sport_title">
+					<span class="f1">
+						<div class="f1">
+							<img src="../189images/title_06.png">
+						</div>
+						<div class="tex f1">
+							旅行、户外、健身，一个都不能少！
+						</div>
+					</span>
+				</div>
+				<!-- ssss -->
+				<div class="main_sport_news">
+					<span class="sps_gk_left" style="background:#55cdf0">
+						<div class="gk_left" style="background: #1ba5e4;">
+							<span class="left_sp1">
+								<a href="#">
+									<p><img src="../189images/f.png"></p>
+									<p class="mt4">畅想99元套餐 </p>
+								</a>
+							</span>
+							<span class="left_sp2">
+								<a href="#">
+									<p><img src="../189images/h.png"></p>
+									<p class="mt4">畅想20G流量</p>
+								</a>
+							</span>
+						</div>
+						<p class="gk_left_p">
+							<a href="#">
+								<img src="../189images/quanjiagx.png">
+							</a>
+						</p>
+						<ul class="gk_left_ul">
+							<li><a href="#">天翼导航</a></li>
+							<li><a href="#">三方通话</a></li>
+							<li><a href="#">开通漫游功能</a></li>
+							<li><a href="#">移动办公</a></li>
+							<!-- <li><a href="#">全屋wifi</a></li>
+							<li><a href="#">情亲副卡</a></li> -->
+						</ul>
+					</span>
+					<span class="go_img2">
+						<ul class="ml_17">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">300Mbs融合套餐</a></p>
+								<p class="f12"><a href="#">60GB国内流量+1000分钟国内语音</a></p>
+								<p class="f14"><a href="#">￥229/月</a></p>
+								<p class="mt10"><a href="#"><img src="../189images/dazhe.png"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">居家办理</a></p>
+								<p class="f14"><a href="#">在线办理</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/free.png"></a></p>
+							</li>
+						</ul>
+						<ul class="ml_17" style="float: right;">
+							<li class="ml_17_l1">
+								<p class="left_u1_l1"><a href="#">宽带专区</a></p>
+								<p class="f12"><a href="#">高速光纤</a></p>
+								<p class="f14"><a href="#"></a></p>
+								<p class="mt10"><a href="#"><img src="../189images/again.png"></a></p>
+							</li>
+							<li class="ml_17_l2">
+								<p class="left_u1_l2"><a href="#">200Mbs光纤宽带</a></p>
+								<p class="f14"><a href="#">￥2200/月</a></p>
+								<p class="mt4"><a href="#"><img src="../189images/jiedianhua.jpg"></a></p>
+							</li>
+						</ul>
+						<div class="ml_l7_center">
+							<p class="left_u1_l1 m70"><a href="#">宽带提速</a></p>
+							<p class="f12"><a href="#"></a></p>
+							<p class="f14"><a href="#"></a></p>
+							<p class="mt30"><a href="#"><img src="../189images/tisu.png"></a></p>
+						</div>
+					</span>
+					<span class="bd_combox">
+						<div class="scroll_hor" id="pic_list_2">
+							<a class="next3"></a>
+							<a class="prev3"></a>
+							<div class="box2">
+								<ul class="list2">
+									<li><a href="#"><img src="../189images/5G3.jpg"></a></li>
+									<li><a href="#"><img src="../189images/200G.png"></a></li>
+									<!-- <li><a href="#"><img src="../189images/xinkai2.jpg"></a></li> -->
+									<!-- <li><a href="#"><img src="../189images/5G3.jpg" ></a></li>
+									<li><a href="#"><img src="../189images/200G.png" ></a></li>
+									<li><a href="#"><img src="../189images/xinkai2.jpg" ></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<!-- 资格 -->
+			<div class="guarantee">
+				<ul>
+					<li>
+						<span class="gu_sp1">
+							<a href="#"><img src="../189images/xiaologo.png"></a>
+						</span>
+						<span class="gu_sp2">
+							<p class="f20"><a href="#">中国电信</a></p>
+							<p class="f16"><a href="#">官方认证渠道</a></p>
+						</span>
+					</li>
+					<li>
+						<span class="gu_sp1">
+							<a href="#"><img src="../189images/zheng.png"></a>
+						</span>
+						<span class="gu_sp2">
+							<p class="f20"><a href="#">正品保障</a></p>
+							<p class="f16"><a href="#">正品发票</a></p>
+						</span>
+					</li>
+
+					<li>
+						<span class="gu_sp1">
+							<a href="#"><img src="../189images/yumao.png"></a>
+						</span>
+						<span class="gu_sp2">
+							<p class="f20"><a href="#">品牌厂家</a></p>
+							<p class="f16"><a href="#">优势品牌</a></p>
+						</span>
+					</li>
+					<li>
+						<span class="gu_sp1">
+							<a href="#"><img src="../189images/new.png"></a>
+						</span>
+						<span class="gu_sp2">
+							<p class="f20"><a href="#">新品上市</a></p>
+							<p class="f16"><a href="#">同步上市</a></p>
+						</span>
+					</li>
+					<li>
+						<span class="gu_sp1">
+							<a href="#"><img src="../189images/zan.png"></a>
+						</span>
+						<span class="gu_sp2">
+							<p class="f20"><a href="#">全场商品</a></p>
+							<p class="f16"><a href="#">无忧退换货</a></p>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 售后 -->
+			<div class="shou">
+				<!-- logo -->
+				<span class="shou_sp1">
+					<a href="#"><img src="../189images/footer_12.png"></a>
+				</span>
+				<!-- 售后窗口 -->
+				<span class="shou_sp2">
+					<ul>
+						<li class="m170">
+							<p class="m170_p"><a href="#">购物指南</a></p>
+							<p><a href="#">购物流程</a></p>
+							<p><a href="#">常见问题</a></p>
+							<p><a href="#">用户隐私政策</a></p>
+							<p><a href="#">用户服务协议</a></p>
+						</li>
+						<li>
+							<p class="m170_p"><a href="#">物流配送</a></p>
+							<p><a href="#">配送说明</a></p>
+							<p><a href="#">收货须知</a></p>
+							<!-- <p><a href="#">用户隐私政策</a></p>
+							<p><a href="#">用户服务协议</a></p> -->
+						</li>
+						<li>
+							<p class="m170_p"><a href="#">支付方式</a></p>
+							<p><a href="#">在线支付</a></p>
+							<p><a href="#">礼品兑换</a></p>
+							<p><a href="#">关于发票</a></p>
+							<!-- <p><a href="#">用户服务协议</a></p> -->
+						</li>
+						<li>
+							<p class="m170_p"><a href="#">售后服务</a></p>
+							<p><a href="#">退换流程</a></p>
+							<p><a href="#">退款说明</a></p>
+							<p><a href="#">服务承诺</a></p>
+							<p><a href="#">售后维修网点</a></p>
+						</li>
+						<li>
+							<p class="m170_p"><a href="#">便民服务</a></p>
+							<p><a href="#">常见问题</a></p>
+							<p><a href="#">投诉与保障</a></p>
+							<p><a href="#">服务指南</a></p>
+							<p><a href="#">常用下载</a></p>
+							<p><a href="#">"扫黄打非"举报专区</a></p>
+							<p><a href="#">诈骗电话举报</a></p>
+						</li>
+					</ul>
+				</span>
+				<!-- 客服 -->
+				<span class="shou_sp3">
+					<span class="ad_sp1">
+						<img src="../189images/erweima.jpg">
+					</span>
+					<span class="ad_sp2">
+						<ul>
+							<li><a href="#">
+									<p><img src="../189images/erji.png"></p>
+									<p>在线客服</p>
+								</a></li>
+							<li><a href="#">
+									<p><img src="../189images/money02.png"></p>
+									<p>资费专区</p>
+								</a></li>
+
+						</ul>
+					</span>
+				</span>
+			</div>
+			<!-- 链接 -->
+			<div class="bellows">
+				<div class="bellows_header">
+					<ul class="lx_nav2">
+						<li class="li01" onclick="secBorad1()">电信欢go网
+							<span class="m120">|</span>
+						</li>
+						<li class="li02" onclick="secBorad2()">合作伙伴</li>
+					</ul>
+				</div>
+				<div class="lx_con" id="vouchb_1">
+					<div class="ov">
+						<div class="bellows_content" id="aio">
+							<ul>
+								<li><a href="#">北京欢go网</a><span>|</span></li>
+								<li><a href="#">安徽欢go网</a><span>|</span></li>
+								<li><a href="#">重庆欢go网</a><span>|</span></li>
+								<li><a href="#">广东欢go网</a><span>|</span></li>
+								<li><a href="#">甘肃欢go网</a><span>|</span></li>
+								<li><a href="#">广西欢go网</a><span>|</span></li>
+								<li><a href="#">贵州欢go网</a><span>|</span></li>
+								<li><a href="#">湖北欢go网</a><span>|</span></li>
+								<li><a href="#">湖南欢go网</a><span>|</span></li>
+								<li><a href="#">河北欢go网</a><span>|</span></li>
+								<li><a href="#">河南欢go网</a><span>|</span></li>
+								<li><a href="#">海南欢go网</a><span>|</span></li>
+								<li><a href="#">黑龙江欢go网</a><span>|</span></li>
+								<li><a href="#">江苏欢go网</a><span>|</span></li>
+								<li><a href="#">吉林欢go网</a><span>|</span></li>
+								<li><a href="#">江西欢go网</a><span>|</span></li>
+								<li><a href="#">辽宁欢go网</a><span>|</span></li>
+								<li><a href="#">内蒙古欢go网</a><span>|</span></li>
+								<li><a href="#">宁夏欢go网</a><span>|</span></li>
+								<li><a href="#">青海欢go网</a><span>|</span></li>
+								<li><a href="#">山东欢go网</a><span>|</span></li>
+								<li><a href="#">上嗨欢go网</a><span>|</span></li>
+								<li><a href="#">山西欢go网</a><span>|</span></li>
+								<li><a href="#">陕西欢go网</a><span>|</span></li>
+								<li><a href="#">四川欢go网</a><span>|</span></li>
+								<li><a href="#">天津欢go网</a><span>|</span></li>
+								<li><a href="#">新疆欢go网</a><span>|</span></li>
+								<li><a href="#">西藏欢go网</a><span>|</span></li>
+								<li><a href="#">云南欢go网</a><span>|</span></li>
+								<li><a href="#">黑龙江欢go网</a><span>|</span></li>
+
+							</ul>
+						</div>
+						<div class="mt47">
+							<a href=""><img src="../189images/x.png"></a>
+							<a href=""><img src="../189images/grey.gif"></a>
+						</div>
+					</div>
+				</div>
+				<div class="lx_con2" id="vouchb_2">
+					<div class="ov">
+						<div class="bellows_content" id="aia">
+							<ul>
+								<li>
+									<a href="#">天翼云</a>
+									<span>|</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 版权 -->
+			<div class="footer_copy">
+				<div class="copy_top">
+					<a href="#">电信公告</a>
+					<span class="f99">|</span>
+					<a href="#">代理专区</a>
+					<span class="f99">|</span>
+					<a href="#">网址导航</a>
+					<span class="f99">|</span>
+					<a href="#">掌上营业厅</a>
+					<span class="f99">|</span>
+					<a href="#">电信营业执照</a>
+					<span class="f99">|</span>
+					<a href="#">合作方执照</a>
+					<span class="f99">|</span>
+
+				</div>
+				<div class="copy_center">
+					<p>
+						版权所有©2012 中国电信集团有限公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP证号:
+						<a href="#" style="margin: 0; color: #777777;">京ICP备12007914号</a>
+					</p>
+				</div>
+				<div class="copy_img">
+					<a href="#"><img src="../189images/footerPic7_01.jpg"></a>
+					<a href="#"><img src="../189images/cnnic.png"></a>
+					<a href="#"><img src="../189images/sf.png"></a>
+					<a href="#"><img src="../189images/footerPic7_04.png"></a>
+					<a href="#"><img src="../189images/brand_bottom_large.jpg"></a>
+					<a href="#"><img src="../189images/footerPic7_06.jpg"></a>
+					<a href="#"><img src="../189images/footerPic7_07.jpg"></a>
+				</div>
+			</div>
+		</div>
+		<!-- 边部广告 -->
+		<div class="sideFloat">
+			<div class="oneFloat">
+				<map name="map1">
+					<area shape="circle" coords="164,15,9" href="javascricpt:smallclose();" />
+					<area shape="rect" coords="22,155,169,193" href="#" />
+				</map>
+				<img src="../189images/asideAd.png" usemap="#map1">
+			</div>
+		</div>
+		<!-- 作者:李茂 20200901 -->
+	</body>
+</html>
